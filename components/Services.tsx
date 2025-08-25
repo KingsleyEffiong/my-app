@@ -1,12 +1,20 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
+
+import React, { JSX } from "react";
+import { motion, Variants } from "framer-motion";
 import { Code, Smartphone, Palette, Globe } from "lucide-react";
 
-// Animation variants
-const cardVariants = {
+// Define type for service items
+interface Service {
+  icon: JSX.Element;
+  title: string;
+  desc: string;
+}
+
+// Framer Motion Variants with dynamic delay using a VariantResolver
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 40 },
-  show: (i) => ({
+  show: (i: number) => ({
     opacity: 1,
     y: 0,
     transition: {
@@ -17,8 +25,8 @@ const cardVariants = {
   }),
 };
 
-function Services() {
-  const services = [
+const Services: React.FC = () => {
+  const services: Service[] = [
     {
       icon: <Smartphone className="w-10 h-10 text-[#FD6F00]" />,
       title: "App Design",
@@ -85,6 +93,6 @@ function Services() {
       </div>
     </section>
   );
-}
+};
 
 export default Services;
