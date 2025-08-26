@@ -53,7 +53,10 @@ function Hero() {
               Your Developer
             </h2>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] bg-clip-text text-transparent leading-snug drop-shadow-md">
-              Full Stack Web Developer
+              Full Stack Developer <br />
+              <span className="text-gray-300 text-lg sm:text-xl font-medium">
+                (with strong Frontend expertise)
+              </span>
             </h1>
           </motion.div>
 
@@ -104,9 +107,9 @@ function Hero() {
             className="grid grid-cols-3 gap-2 sm:gap-4 bg-white/5 backdrop-blur-md rounded-xl overflow-hidden mt-6 text-xs sm:text-sm border border-white/10"
           >
             {[
-              { number: "4", label: "Experiences" },
+              { number: "3+", label: "Experiences" },
               { number: "10+", label: "Projects Done" },
-              { number: "4+", label: "Happy Clients" },
+              { number: "5+", label: "Happy Clients" },
             ].map((stat, i) => (
               <div
                 key={i}

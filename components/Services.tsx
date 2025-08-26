@@ -28,11 +28,6 @@ const cardVariants: Variants = {
 const Services: React.FC = () => {
   const services: Service[] = [
     {
-      icon: <Smartphone className="w-10 h-10 text-[#FD6F00]" />,
-      title: "App Design",
-      desc: "Crafting intuitive, user-friendly, and visually stunning mobile app interfaces.",
-    },
-    {
       icon: <Globe className="w-10 h-10 text-[#FD6F00]" />,
       title: "Web Development",
       desc: "Building fast, scalable, and modern web applications using cutting-edge tech.",
@@ -41,11 +36,6 @@ const Services: React.FC = () => {
       icon: <Code className="w-10 h-10 text-[#FD6F00]" />,
       title: "Full-Stack Development",
       desc: "Delivering complete solutions from frontend to backend with clean, maintainable code.",
-    },
-    {
-      icon: <Palette className="w-10 h-10 text-[#FD6F00]" />,
-      title: "UI/UX Design",
-      desc: "Designing engaging digital experiences with a focus on clarity and usability.",
     },
   ];
 

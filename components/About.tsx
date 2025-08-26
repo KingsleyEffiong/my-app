@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { motion, easeOut, useInView } from "framer-motion";
-import { Download } from "lucide-react";
+import { motion, easeOut } from "framer-motion";
 import {
   SiHtml5,
   SiJavascript,
@@ -12,6 +11,8 @@ import {
   SiTailwindcss,
   SiReact,
   SiNodedotjs,
+  SiFramer,
+  SiThreedotjs,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
@@ -39,8 +40,8 @@ const skills = [
   { name: "JavaScript", icon: <SiJavascript size={28} />, percent: 100 },
   { name: "TypeScript", icon: <SiTypescript size={28} />, percent: 90 },
   { name: "Next.js", icon: <TbBrandNextjs size={28} />, percent: 90 },
-  { name: "MongoDB", icon: <SiMongodb size={28} />, percent: 85 },
-  { name: "Express", icon: <SiExpress size={28} />, percent: 80 },
+  { name: "MongoDB", icon: <SiMongodb size={28} />, percent: 95 },
+  { name: "Express", icon: <SiExpress size={28} />, percent: 90 },
   { name: "TailwindCSS", icon: <SiTailwindcss size={28} />, percent: 95 },
   {
     name: "React & Node.js",
@@ -51,20 +52,32 @@ const skills = [
     ),
     percent: 90,
   },
+  {
+    name: "Framer Motion",
+    icon: <SiFramer size={28} />, // from react-icons/si
+    percent: 95,
+  },
+  {
+    name: "Three.js",
+    icon: <SiThreedotjs size={28} />, // from react-icons/si
+    percent: 90,
+  },
 ];
 
 function About() {
   return (
     <section
       id="about"
-      className="relative w-full flex flex-col items-center justify-center py-20 px-4 sm:px-6 md:px-10 text-white"
+      className="relative w-full flex flex-col items-center justify-center py-20 px-4 sm:px-6 md:px-10 text-white overflow-x-hidden"
     >
       {/* Background Glow */}
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 0.05 }}
         transition={{ duration: 1.5, ease: easeOut }}
-        className="absolute left-1/2 -translate-x-1/2 top-0 w-[600px] h-[600px] rounded-full bg-[#FD6F00] blur-3xl -z-10"
+        className="absolute left-1/2 -translate-x-1/2 top-0 
+                   w-[300px] h-[300px] sm:w-[450px] sm:h-[450px] md:w-[600px] md:h-[600px] 
+                   rounded-full bg-[#FD6F00] blur-3xl -z-10"
       />
 
       {/* Main Grid */}
@@ -124,11 +137,10 @@ function About() {
             webs of logic.
           </motion.p>
 
-          {/* Download Button */}
+          {/* Contact Button */}
           <motion.div variants={item}>
             <a
               href="#contact"
-              download
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-gradient-to-r from-[#FD6F00] to-[#E46400] text-white shadow-lg hover:scale-105 transition-transform duration-300"
             >
               Contact Me
@@ -143,7 +155,7 @@ function About() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="w-full mt-24 max-w-screen-lg grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-12 justify-items-center"
+        className="w-full mt-24 max-w-screen-lg grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-10 md:gap-12 justify-items-center"
       >
         {skills.map((skill, index) => (
           <motion.div
