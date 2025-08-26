@@ -103,13 +103,15 @@ function Navbar() {
                 {label}
               </motion.a>
             ))}
-            <motion.button
+            <motion.a
+              href="#contact"
               whileTap={{ scale: 0.9 }}
+              onClick={() => setIsOpen(false)}
               whileHover={{ scale: 1.05 }}
               className="px-7 py-2.5 font-semibold text-white rounded-full bg-gradient-to-r from-[#FA6E00] to-[#E60026] shadow-lg hover:opacity-90 transition cursor-pointer"
             >
               Hire Me
-            </motion.button>
+            </motion.a>
           </motion.div>
         )}
       </AnimatePresence>
