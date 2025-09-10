@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
+
 export const metadata: Metadata = {
-  title: "Privit",
+  title: "Your_Developer",
   description: "My portfolio Website",
   keywords: ["Portfolio"],
-  metadataBase: new URL("https://privito.vercel.app"),
+  icons: {
+    icon: "/logo-portfolio.png", // favicon
+  },
+  metadataBase: new URL("https://yourdeveloper.vercel.app/"),
   openGraph: {
-    title: "Privit",
-    description: "My Porfolio Website",
-    url: "https://privito.vercel.app",
+    title: "Your_Developer",
+    description: "My Portfolio Website",
+    url: "https://yourdeveloper.vercel.app/",
     siteName: "portfolio",
     locale: "en_US",
     type: "website",
@@ -17,9 +21,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body>{children}</body>
