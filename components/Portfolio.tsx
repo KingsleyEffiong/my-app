@@ -17,11 +17,11 @@ const categories = [
 const portfolioItems = [
   {
     id: 1,
-    name: "Mounttech Solutions",
-    category: "Web3 Decentralised Application",
-    image: "/images/web 3 app.png",
-    liveLink: "https://token-livid.vercel.app/",
-    githubLink: "https://github.com/KingsleyEffiong/Web-3-Web-application",
+    name: "AI Powered Resume Review",
+    category: "Web Application",
+    image: "/images/resumeai.png",
+    liveLink: "https://ai-powered-resume-review.vercel.app/",
+    githubLink: "https://github.com/KingsleyEffiong/AI-Powered-Resume-Review",
   },
   {
     id: 2,
