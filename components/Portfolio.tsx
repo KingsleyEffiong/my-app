@@ -81,7 +81,9 @@ const Portfolio = () => {
     >
       {/* Section Title */}
       <div className="text-center mb-10">
-        <h2 className="text-3xl sm:text-4xl font-bold">Portfolio Projects</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold">
+          Recent Portfolio Projects
+        </h2>
       </div>
 
       {/* Filter Buttons */}
