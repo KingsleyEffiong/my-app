@@ -162,17 +162,7 @@ const Contact = () => {
             placeholder="Phone Number"
             className="bg-white/10 border border-white/20 rounded-md px-4 py-3 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FD6F00]"
           />
-          <select
-            name="interest"
-            value={formData.interest}
-            onChange={handleChange}
-            className="bg-white/10 border border-white/20 rounded-md px-4 py-3 text-sm text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FD6F00]"
-          >
-            <option value="">Service Of Interest</option>
-            <option value="web">Web Development</option>
-            <option value="mobile">Mobile App Design</option>
-            <option value="branding">Branding</option>
-          </select>
+
           <input
             type="text"
             name="timeline"

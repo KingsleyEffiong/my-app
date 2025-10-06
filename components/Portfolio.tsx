@@ -17,6 +17,14 @@ const categories = [
 const portfolioItems = [
   {
     id: 1,
+    name: "Smart Social Media management tool",
+    category: "Web Application",
+    image: "/images/nexaa.png",
+    liveLink: "https://app.nexaasocial.com/",
+    githubLink: "https://github.com/nexaa-devs/nexaa-frontend",
+  },
+  {
+    id: 2,
     name: "AI Powered Resume Review",
     category: "Web Application",
     image: "/images/resumeai.png",
@@ -24,7 +32,7 @@ const portfolioItems = [
     githubLink: "https://github.com/KingsleyEffiong/AI-Powered-Resume-Review",
   },
   {
-    id: 2,
+    id: 3,
     name: "AI Promtopia",
     category: "Web Application",
     image: "/images/promptopia.png",
@@ -32,7 +40,7 @@ const portfolioItems = [
     githubLink: "https://github.com/ai-promptopia",
   },
   {
-    id: 3,
+    id: 4,
     name: "Telegram Web 3 Web Application",
     category: "Web Application",
     image: "/images/mounttech telegram miniapp.png",
@@ -40,7 +48,7 @@ const portfolioItems = [
     githubLink: "https://github.com/KingsleyEffiong/Telegram-MiniApp",
   },
   {
-    id: 4,
+    id: 5,
     name: "MyExpense-X",
     category: "Web Application",
     image: "/images/dashboard expense.png",
@@ -48,21 +56,13 @@ const portfolioItems = [
     githubLink: "https://github.com/KingsleyEffiong/MyExpense-X",
   },
   {
-    id: 5,
+    id: 6,
     name: "Amazon Price Checker",
     category: "Website Application",
     image: "/images/amazon.png",
     liveLink: "https://amazon-price-tracker-web-application.vercel.app/login",
     githubLink:
       "https://github.com/KingsleyEffiong/Amazon-price-tracker-web-application",
-  },
-  {
-    id: 6,
-    name: "Document Converter",
-    category: "Web Application",
-    image: "/images/picture.png",
-    liveLink: "https://converter-rouge.vercel.app/",
-    githubLink: "https://github.com/KingsleyEffiong/converter-",
   },
 ];
 

@@ -38,11 +38,11 @@ const item = {
 const skills = [
   { name: "HTML", icon: <SiHtml5 size={28} />, percent: 100 },
   { name: "JavaScript", icon: <SiJavascript size={28} />, percent: 100 },
-  { name: "TypeScript", icon: <SiTypescript size={28} />, percent: 90 },
-  { name: "Next.js", icon: <TbBrandNextjs size={28} />, percent: 90 },
-  { name: "MongoDB", icon: <SiMongodb size={28} />, percent: 95 },
-  { name: "Express", icon: <SiExpress size={28} />, percent: 90 },
-  { name: "TailwindCSS", icon: <SiTailwindcss size={28} />, percent: 95 },
+  { name: "TypeScript", icon: <SiTypescript size={28} />, percent: 100 },
+  { name: "Next.js", icon: <TbBrandNextjs size={28} />, percent: 100 },
+  { name: "MongoDB", icon: <SiMongodb size={28} />, percent: 100 },
+  { name: "Express", icon: <SiExpress size={28} />, percent: 100 },
+  { name: "TailwindCSS", icon: <SiTailwindcss size={28} />, percent: 100 },
   {
     name: "React & Node.js",
     icon: (
@@ -50,17 +50,17 @@ const skills = [
         <SiReact size={22} /> <SiNodedotjs size={22} />
       </div>
     ),
-    percent: 90,
+    percent: 100,
   },
   {
     name: "Framer Motion",
     icon: <SiFramer size={28} />, // from react-icons/si
-    percent: 95,
+    percent: 100,
   },
   {
     name: "Three.js",
     icon: <SiThreedotjs size={28} />, // from react-icons/si
-    percent: 90,
+    percent: 100,
   },
 ];
 
@@ -192,7 +192,7 @@ function About() {
                   stroke="#FD6F00"
                   strokeWidth="8"
                   fill="none"
-                  transform="rotate(-90 40 40)"
+                  transform="rotate(-100 40 40)"
                   initial={{ strokeDasharray: "0 220" }}
                   whileInView={{
                     strokeDasharray: `${(skill.percent / 100) * 220} 220`,
@@ -210,14 +210,14 @@ function About() {
               </div>
             </motion.div>
             <p className="text-sm font-medium">{skill.name}</p>
-            <motion.p
+            {/* <motion.p
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-sm text-gray-400"
             >
               {skill.percent}%
-            </motion.p>
+            </motion.p> */}
           </motion.div>
         ))}
       </motion.div>

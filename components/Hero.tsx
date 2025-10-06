@@ -104,12 +104,11 @@ function Hero() {
           {/* Stats Card */}
           <motion.div
             variants={item}
-            className="grid grid-cols-3 gap-2 sm:gap-4 bg-white/5 backdrop-blur-md rounded-xl overflow-hidden mt-6 text-xs sm:text-sm border border-white/10"
+            className="grid grid-cols-2 gap-2 sm:gap-4 bg-white/5 backdrop-blur-md rounded-xl overflow-hidden mt-6 text-xs sm:text-sm border border-white/10"
           >
             {[
               { number: "3+", label: "Experiences" },
               { number: "10+", label: "Projects Done" },
-              { number: "5+", label: "Happy Clients" },
             ].map((stat, i) => (
               <div
                 key={i}
