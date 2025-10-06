@@ -36,7 +36,7 @@ const portfolioItems = [
     name: "AI Promtopia",
     category: "Web Application",
     image: "/images/promptopia.png",
-    liveLink: "https://promptopia.com",
+    liveLink: "https://promptopia-theta-azure.vercel.app/",
     githubLink: "https://github.com/ai-promptopia",
   },
   {
