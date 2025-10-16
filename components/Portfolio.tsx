@@ -24,7 +24,7 @@ const portfolioItems = [
     githubLink: "https://github.com/nexaa-devs/nexaa-frontend",
   },
   {
-    id: 3,
+    id: 2,
     name: "Mount Tech Token Disbursment",
     category: "Web 3 Application",
     image: "/images/web 3 app.png",
