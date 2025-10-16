@@ -24,7 +24,15 @@ const portfolioItems = [
     githubLink: "https://github.com/nexaa-devs/nexaa-frontend",
   },
   {
-    id: 2,
+    id: 3,
+    name: "Mount Tech Token Disbursment",
+    category: "Web 3 Application",
+    image: "/images/web 3 app.png",
+    liveLink: "https://token-livid.vercel.app/",
+    githubLink: "https://github.com/KingsleyEffiong/Web-3-Web-application",
+  },
+  {
+    id: 3,
     name: "AI Powered Resume Review",
     category: "Web Application",
     image: "/images/resumeai.png",
@@ -32,7 +40,7 @@ const portfolioItems = [
     githubLink: "https://github.com/KingsleyEffiong/AI-Powered-Resume-Review",
   },
   {
-    id: 3,
+    id: 4,
     name: "AI Promtopia",
     category: "Web Application",
     image: "/images/promptopia.png",
@@ -40,7 +48,7 @@ const portfolioItems = [
     githubLink: "https://github.com/ai-promptopia",
   },
   {
-    id: 4,
+    id: 5,
     name: "Telegram Web 3 Web Application",
     category: "Web Application",
     image: "/images/mounttech telegram miniapp.png",
@@ -48,7 +56,7 @@ const portfolioItems = [
     githubLink: "https://github.com/KingsleyEffiong/Telegram-MiniApp",
   },
   {
-    id: 5,
+    id: 6,
     name: "MyExpense-X",
     category: "Web Application",
     image: "/images/dashboard expense.png",
@@ -56,7 +64,7 @@ const portfolioItems = [
     githubLink: "https://github.com/KingsleyEffiong/MyExpense-X",
   },
   {
-    id: 6,
+    id: 7,
     name: "Amazon Price Checker",
     category: "Website Application",
     image: "/images/amazon.png",
