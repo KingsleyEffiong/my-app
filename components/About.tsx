@@ -52,16 +52,8 @@ const skills = [
     ),
     percent: 100,
   },
-  {
-    name: "Framer Motion",
-    icon: <SiFramer size={28} />, // from react-icons/si
-    percent: 100,
-  },
-  {
-    name: "Three.js",
-    icon: <SiThreedotjs size={28} />, // from react-icons/si
-    percent: 100,
-  },
+  { name: "Framer Motion", icon: <SiFramer size={28} />, percent: 100 },
+  { name: "Three.js", icon: <SiThreedotjs size={28} />, percent: 100 },
 ];
 
 function About() {
@@ -123,22 +115,51 @@ function About() {
           >
             About Me
           </motion.h2>
+
           <motion.p
             variants={item}
             className="text-gray-400 text-sm sm:text-base leading-relaxed"
           >
-            A software engineer, the modern-day architect of digital realms,
-            navigates the ethereal landscapes of code, sculpting intangible
-            structures that shape our technological world...
+            I’m{" "}
+            <span className="text-white font-semibold">Kingsley Effiong</span>,
+            a passionate{" "}
+            <span className="text-[#FD6F00] font-semibold">
+              Full Stack Developer
+            </span>
+            who loves crafting clean, efficient, and user-focused digital
+            experiences. I specialize in building fast and modern web
+            applications using{" "}
+            <span className="text-white">React, Next.js, Node.js,</span> and{" "}
+            <span className="text-white">MongoDB</span>.
             <br /> <br />
-            Their canvas is a screen, a vast expanse where lines of code dance
-            in intricate patterns. Each keystroke is a brushstroke, debugging
-            becomes a noble pursuit, unraveling mysteries hidden within tangled
-            webs of logic.
+            Over the past few years, I’ve worked on a range of projects — from
+            small business websites to scalable web apps — combining creative
+            frontend design with solid backend logic. I enjoy turning complex
+            problems into smooth, visually engaging user interfaces.
+            <br /> <br />
+            When I’m not coding, I love exploring new technologies, improving
+            performance in existing projects, and learning how design and
+            development can blend perfectly to create memorable digital
+            products.
           </motion.p>
 
+          {/* What I Do Section */}
+          <motion.div variants={item} className="mt-2">
+            <h3 className="text-xl font-semibold text-white mb-2">What I Do</h3>
+            <ul className="text-gray-400 text-sm sm:text-base space-y-1 list-disc pl-5">
+              <li>Build responsive web apps using React & Next.js</li>
+              <li>
+                Develop secure and scalable backend systems with Node.js &
+                Express
+              </li>
+              <li>Design intuitive UIs with Tailwind CSS and Framer Motion</li>
+              <li>Integrate APIs and manage data with MongoDB</li>
+              <li>Continuously optimize performance and accessibility</li>
+            </ul>
+          </motion.div>
+
           {/* Contact Button */}
-          <motion.div variants={item}>
+          <motion.div variants={item} className="mt-4">
             <a
               href="#contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-gradient-to-r from-[#FD6F00] to-[#E46400] text-white shadow-lg hover:scale-105 transition-transform duration-300"
@@ -210,14 +231,6 @@ function About() {
               </div>
             </motion.div>
             <p className="text-sm font-medium">{skill.name}</p>
-            {/* <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="text-sm text-gray-400"
-            >
-              {skill.percent}%
-            </motion.p> */}
           </motion.div>
         ))}
       </motion.div>

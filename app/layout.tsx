@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Your_Developer",
+  title: "Kingsley Effiong - Portfolio",
   description: "My portfolio Website",
   keywords: ["Portfolio"],
   icons: {
-    icon: "/logo-portfolio.png", // favicon
+    icon: "/logo-portfolio.png", 
   },
   metadataBase: new URL("https://yourdeveloper.vercel.app/"),
   openGraph: {
-    title: "Your_Developer",
+    title: "kingsley",
     description: "My Portfolio Website",
     url: "https://yourdeveloper.vercel.app/",
     siteName: "portfolio",
