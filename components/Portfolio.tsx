@@ -25,19 +25,19 @@ const portfolioItems = [
   },
   {
     id: 2,
+    name: "Generate Free Instant Pro Invoice",
+    category: "Web Application",
+    image: "/images/justinvoice.png",
+    liveLink: "https://www.justinvoice.ng/",
+    githubLink: "https://github.com/DivineTiddy/invoice",
+  },
+  {
+    id: 3,
     name: "Mount Tech Token Disbursment",
     category: "Web 3 Application",
     image: "/images/web 3 app.png",
     liveLink: "https://token-livid.vercel.app/",
     githubLink: "https://github.com/KingsleyEffiong/Web-3-Web-application",
-  },
-  {
-    id: 3,
-    name: "AI Powered Resume Review",
-    category: "Web Application",
-    image: "/images/resumeai.png",
-    liveLink: "https://ai-powered-resume-review.vercel.app/",
-    githubLink: "https://github.com/KingsleyEffiong/AI-Powered-Resume-Review",
   },
   {
     id: 4,
@@ -49,6 +49,15 @@ const portfolioItems = [
   },
   {
     id: 5,
+    name: "AI Powered Resume Review",
+    category: "Web Application",
+    image: "/images/resumeai.png",
+    liveLink: "https://ai-powered-resume-review.vercel.app/",
+    githubLink: "https://github.com/KingsleyEffiong/AI-Powered-Resume-Review",
+  },
+
+  {
+    id: 6,
     name: "Telegram Web 3 Web Application",
     category: "Web Application",
     image: "/images/mounttech telegram miniapp.png",
@@ -56,7 +65,7 @@ const portfolioItems = [
     githubLink: "https://github.com/KingsleyEffiong/Telegram-MiniApp",
   },
   {
-    id: 6,
+    id: 7,
     name: "MyExpense-X",
     category: "Web Application",
     image: "/images/dashboard expense.png",
@@ -64,7 +73,7 @@ const portfolioItems = [
     githubLink: "https://github.com/KingsleyEffiong/MyExpense-X",
   },
   {
-    id: 7,
+    id: 8,
     name: "Amazon Price Checker",
     category: "Website Application",
     image: "/images/amazon.png",
